@@ -19,7 +19,7 @@ class Search extends Component {
         });
     }
     handleSubmit(e) {
-        //e.preventDefault();
+        e.preventDefault();
         ReactDOM.findDOMNode(this.refs.answer).value = '';
         this.props.update(this.state.input);
     }

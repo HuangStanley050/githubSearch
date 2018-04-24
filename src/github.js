@@ -61,7 +61,7 @@ class Github extends React.Component {
         return (
             <div className="wrapper">
             <Search update={this.updateUserName}/>
-            <Profile/>
+            <Profile userdata={this.state}/>
             </div>
         );
     }
