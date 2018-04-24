@@ -21,6 +21,7 @@ class Github extends React.Component {
             notFound: ""
         }
         this.getProfile = this.getProfile.bind(this);
+        this.updateUserName = this.updateUserName.bind(this);
     }
 
     componentDidMount() {
@@ -50,10 +51,16 @@ class Github extends React.Component {
 
     }
 
+    updateUserName(newUserName) {
+        //this.setState({ username: newUserName });
+        //alert(newUserName + " working!!");
+        this.getProfile(newUserName);
+    }
+
     render() {
         return (
             <div className="wrapper">
-            <Search/>
+            <Search update={this.updateUserName}/>
             <Profile/>
             </div>
         );

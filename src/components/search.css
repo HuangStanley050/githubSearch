@@ -1,0 +1,12 @@
+.form-control{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.form-group{
+    margin-top:30px;
+}
+.btn.btn-info{
+    display:inline-block;
+}
